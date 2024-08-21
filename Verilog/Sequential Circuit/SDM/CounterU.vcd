@@ -1,0 +1,71 @@
+$date
+	Sun Jul 21 00:59:28 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Counter_tb $end
+$var wire 7 ! q [6:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module circuit $end
+$var wire 1 " clk $end
+$var wire 7 $ q [6:0] $end
+$var wire 1 # reset $end
+$var wire 7 % r_next [6:0] $end
+$var reg 7 & r_reg [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 &
+b1 %
+b0 $
+1#
+0"
+b0 !
+$end
+#10000
+1"
+#20000
+0#
+0"
+#30000
+b10 %
+b1 !
+b1 $
+b1 &
+1"
+#40000
+0"
+#50000
+b11 %
+b10 !
+b10 $
+b10 &
+1"
+#60000
+0"
+#70000
+b100 %
+b11 !
+b11 $
+b11 &
+1"
+#80000
+0"
+#90000
+b101 %
+b100 !
+b100 $
+b100 &
+1"
+#100000
+0"

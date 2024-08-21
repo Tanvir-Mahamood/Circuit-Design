@@ -22,6 +22,7 @@ module comb1_tb();
     end
 
     initial begin
-        $monitor("D=%b X=%b A = %b  L=%b", D, X, A, L);
+        $monitor("D=%b X=%b A=%b L=%b", D, X, A, L);
     end
+
 endmodule

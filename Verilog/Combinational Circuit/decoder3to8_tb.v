@@ -9,19 +9,19 @@ module decoder3to8_tb();
         $dumpfile("decoder3to8.vcd");
         $dumpvars(0, decoder3to8_tb);
 
-        E = 1; A[2] = 0; A[1] = 0; A[0] = 0; #20;
-        A[2] = 0; A[1] = 0; A[0] = 1; #20;
-        A[2] = 0; A[1] = 1; A[0] = 0; #20;
-        A[2] = 0; A[1] = 1; A[0] = 1; #20;
-        A[2] = 1; A[1] = 0; A[0] = 0; #20;
-        A[2] = 1; A[1] = 0; A[0] = 1; #20;
-        A[2] = 1; A[1] = 1; A[0] = 0; #20;
-        A[2] = 1; A[1] = 1; A[0] = 1; #20;
-
+        E = 1;
+        A = 3'b000; #20;
+        A = 3'b001; #20;
+        A = 3'b010; #20;
+        A = 3'b011; #20;
+        A = 3'b100; #20;
+        A = 3'b101; #20;
+        A = 3'b110; #20;
+        A = 3'b111; #20;
         $finish;
     end
 
     initial begin
-        $monitor("A[2]=%b A[1]=%b A[0]=%b  Y=%8b", A[2], A[1], A[0], Y);
+        $monitor("A=%b Y=%b", A, Y);
     end
     endmodule

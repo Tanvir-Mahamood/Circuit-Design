@@ -11,7 +11,6 @@ module decoder3to8(input [2:0] A, input E, output [7:0] Y);
     
 endmodule
 */
-
 /*
 module decoder3to8(input [2:0] A, input E, output reg [7:0] Y);
     always @(*) begin
@@ -27,7 +26,7 @@ module decoder3to8(input [2:0] A, input E, output reg [7:0] Y);
     end
 endmodule
 */
-
+/*
 module decoder3to8(input [2:0] A, input E, output reg [7:0] Y);
     always @(*) begin
         case ({E, A})
@@ -43,4 +42,4 @@ module decoder3to8(input [2:0] A, input E, output reg [7:0] Y);
         endcase
     end
 endmodule
-
+*/

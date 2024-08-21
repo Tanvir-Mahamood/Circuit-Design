@@ -10,17 +10,16 @@ module multiplexer_tb();
         $dumpfile("multiplexer.vcd");
         $dumpvars(0, multiplexer_tb);
 
-        I[0] = 1; I[1] = 0; I[2] = 0; I[3] = 1;
-
-        S[1] = 0; S[0] = 0; #20;
-        S[1] = 0; S[0] = 1; #20;
-        S[1] = 1; S[0] = 0; #20;
-        S[1] = 1; S[0] = 1; #20;
-
+        I = 4'b1001;
+        S=2'b00; #20;
+        S=2'b01; #20;
+        S=2'b10; #20;
+        S=2'b11; #20;
         $finish;
     end
 
     initial begin
-        $monitor("S[1]=%b S[0]=%b Y=%b", S[1], S[0], Y);
+        $monitor("I=%b S=%b Y=%b", I, S, Y);
     end
+
 endmodule

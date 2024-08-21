@@ -6,7 +6,7 @@ module d_ff_tb();
     d_ff uut(clk, d, q);
 
     always begin
-        clk = ~clk; 
+        clk = ~clk;
         #10;
     end
 
@@ -14,7 +14,7 @@ module d_ff_tb();
         $dumpfile("d_ff.vcd");
         $dumpvars(0, d_ff_tb);
 
-        clk <= 0; d <= 0; #20;
+        clk <= 0; d<= 0; #20;
         d <= 1; #20;
 
         $finish;

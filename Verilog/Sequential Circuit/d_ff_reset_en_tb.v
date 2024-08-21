@@ -14,9 +14,10 @@ module d_ff_reset_en_tb();
         $dumpfile("d_ff_reset_en.vcd");
         $dumpvars(0, d_ff_reset_en_tb);
 
-        clk <= 0; reset <= 1; en <= 0; d <= 0; #20;
-        reset <= 0; d <= 1; #20;
-        en <= 1; #20;
+        clk <= 0; reset <= 1; en <= 1; d <= 1; #20;
+        reset <= 0; en <= 0; d <= 1; #20;
+        en <= 1; d <= 0; #20;
+        d <= 1; #20;
 
         $finish;
     end

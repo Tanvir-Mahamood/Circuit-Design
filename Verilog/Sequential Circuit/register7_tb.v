@@ -14,8 +14,8 @@ module register7_tb();
         $dumpfile("register7.vcd");
         $dumpvars(0, register7_tb);
 
-        clk <= 0; reset <= 1; d <= 7'b0000_000; #20;
-        reset <= 0; d <= 7'b0000_111; #20;
+        clk <= 0; reset <= 1; d <= 7'b0101010; #20;
+        reset <= 0; #20;
 
         $finish;
     end
@@ -23,4 +23,5 @@ module register7_tb();
     initial begin
         $monitor("clk=%b reset=%b d=%b q=%b", clk, reset, d, q);
     end
+
 endmodule

@@ -5,7 +5,7 @@ module d_ff_reset_tb();
 
     d_ff_reset uut(clk, reset, d, q);
 
-    always begin
+    always  begin
         clk = ~clk;
         #10;
     end
@@ -14,8 +14,11 @@ module d_ff_reset_tb();
         $dumpfile("d_ff_reset.vcd");
         $dumpvars(0, d_ff_reset_tb);
 
-        clk <= 0; reset<= 1; d<= 0; #20;
-        reset <= 0; d <= 1; #20;
+        clk <= 0; reset <= 1; d <= 0; #20;
+        d <= 1; #20;
+
+        reset <= 0; d <= 0; #20;
+        d <= 1; #20;
 
         $finish;
     end
