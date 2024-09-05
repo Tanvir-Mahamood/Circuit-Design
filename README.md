@@ -15,6 +15,7 @@ These circuits were designed during my **Electronic Drives and Circuits Sessiona
 ## Software Installation:
 [Multisim](https://www.ni.com/en/support/downloads/software-products/download.multisim.html?srsltid=AfmBOopgT5CnLHW1L-3T4yTjzEIg2e8oA2W0uIiR0OcU6_kQkyEpZWBh#452133)
 
+<br><hr>
 # Logisim:
 These were designed for my **Digital Logic Design** course.
 - Counter: Asynchronous, Synchronous, Decade, Decade using D Flip-Flop
@@ -52,7 +53,7 @@ These were designed for my **Digital Logic Design** course.
 ## Software: 
 [Logisim](https://sourceforge.net/projects/circuit/)
 
-
+<br><hr>
 # Verilog
 In **Computer Architecture** course, I am learning Verilog. Verilog, standardized as IEEE 1364, is a hardware description language (HDL) used to model electronic systems. 
 - Combinational Circuit:
@@ -68,10 +69,10 @@ In **Computer Architecture** course, I am learning Verilog. Verilog, standardize
   - D Flip-Flop with Synchronour Reset
   - D Flip-Flop with Asynchronous Enable Pin
   - Register
-	- SDM(Synchronous Design Methodology)
-    - Counter
-    - D_ff
-    - Register
+- SDM(Synchronous Design Methodology)
+  - Counter
+  - D_ff
+  - Register
 - self:
   - Increment with clock
     
@@ -98,13 +99,16 @@ sudo apt-get install gtkwave
 - Step4: Go to terminal & write
   
 ```
-iverilog -o out.vpp comb1.v comb1_tb.v
+iverilog -o comb1.vpp comb1.v comb1_tb.v
 vvp out.vpp
 ```
 
+> [!NOTE]
+> An outfile file `comb1.vpp` will be created and output will be visible in terminal.
+
 - Step5: To watch graphical representation: Add two lines in test bench code.
 
-```
+```verilog
 $dumpfile("comb1.vcd");
 $dumpvars(0,comb1_tb);
 ```
@@ -116,6 +120,9 @@ iverilog -o out.vpp comb1.v comb1_tb.v
 vvp out.vpp
 gtkwave comb1.vcd
 ```
+
+> [!NOTE]
+> An a graphical outfile file `comb1.vcd` will be created and output will be visible in a new window.
 
 
 
