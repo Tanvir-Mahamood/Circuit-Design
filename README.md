@@ -1,3 +1,8 @@
+# Navigation
+1. [Multisim](#Multisim)
+2. [Logisim](#Logisim)
+3. [Verilog](#Verilog)
+
 # Multisim
 These circuits were designed during my **Electronic Drives and Circuits Sessionals** course.
 ## Description:
@@ -91,7 +96,7 @@ sudo apt-get install gtkwave
 
 **IDE**: VSCode <br>
 
-**How to Run**:<br>
+## How to Run:
 [Youtube](https://www.youtube.com/watch?v=rwVFDfy2xVI)<br>
 - Step1: Write verilog code. Save it as `comb1.v`.
 - Step2: Write test bench	and save it as `comb1_tb.v`
