@@ -2,6 +2,7 @@
 1. [Multisim](#Multisim)
 2. [Logisim](#Logisim)
 3. [Verilog](#Verilog)
+4. [Logisim Evolution]()
 
 # Multisim
 These circuits were designed during my **Electronic Drives and Circuits Sessionals** course.
@@ -130,5 +131,7 @@ gtkwave comb1.vcd
 > An a graphical outfile file `comb1.vcd` will be created and output will be visible in a new window.
 
 
+# Logisim Evolution
+[Installation](https://github.com/Tanvir-Mahamood/Computer-Architecture?tab=readme-ov-file#software-to-be-installed)
 
 
