@@ -132,6 +132,10 @@ gtkwave comb1.vcd
 
 
 # Logisim Evolution
-[Installation](https://github.com/Tanvir-Mahamood/Computer-Architecture?tab=readme-ov-file#software-to-be-installed)
+Install **Logisim-evolution** version 3.8.0 using [link](https://github.com/logisim-evolution/logisim-evolution/releases). <br>
+Logisim-evolution is a Java application; therefore, it can run on any operating system supporting the Java runtime environment. 
+It requires Java 16 (or newer). If JAVA is not installed, install using [link](https://www.oracle.com/java/technologies/downloads/)
+> [!NOTE]
+>  For Intel Laptop with Windows OS should install logisim-evolution-3.8.0-x86.msi file
 
 
